@@ -1,0 +1,33 @@
+<h2 style="text-align: center;font-weight: bold;">{{ title }}</h2>
+<body>
+    <div id="container">
+      <form name="calculator">
+          <input type="textfield" [(ngModel)]="ans" name="ans" readonly>
+          
+          <input type="button" value="C" (click)="clearAll()" class="clearall">
+          <input type="button" value="÷" (click)="addOperator('÷')" class="operator">
+          <input type="button" value="*" (click)="addOperator('*')" class="operator">
+          <input type="button" value="x" class="clear" (click)="clearDigits()">
+          
+          <input type="button" value="7" (click)="addNumber('7')" class="gray">
+          <input type="button" value="8" (click)="addNumber('8')" class="gray">
+          <input type="button" value="9" (click)="addNumber('9')" class="gray">
+          <input type="button" value="-" (click)="addOperator('-')" class="operator">
+  
+          <input type="button" value="4" (click)="addNumber('4')" class="gray">
+          <input type="button" value="5" (click)="addNumber('5')" class="gray">
+          <input type="button" value="6" (click)="addNumber('6')" class="gray">
+          <input type="button" value="+" (click)="addOperator('+')" class="operator">
+          
+          <input type="button" value="1" (click)="addNumber('1')" class="gray">
+          <input type="button" value="2" (click)="addNumber('2')" class="gray">
+          <input type="button" value="3" (click)="addNumber('3')" class="gray">
+          
+          <input type="button" value="=" (click)="calcOperation()" class="igual" >
+          <input type="button" value="%" (click)="addOperator('%')" class="gray">
+          <input type="button" value="0" (click)="addNumber('0')" class="gray">
+          <input type="button" value="." (click)="addOperator('.')" class="gray">
+
+      </form>
+    </div>
+</body>

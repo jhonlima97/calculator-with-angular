@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    background-color: rgb(209, 204, 199);
+}
+
+#container {
+    height: 510px;
+    width: 300px;
+    margin-top: -5%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+}
+
+#container form {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto repeat(5, 1fr);
+    grid-gap: 3px;
+}
+
+#container input[type=textfield] {
+    grid-column: span 4;
+    width: 100%;
+    cursor: default;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(10, 143, 88);
+    color: white;
+    padding: 15px;
+    text-align: right;
+    font-size: 50px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+}
+
+#container input[type=button], input[type=reset] {
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    color: black;
+    padding: 18px;
+    margin: 0; /* Elimina el margen para evitar problemas con la cuadrícula */
+    border: 0;
+    border-radius: 100%;
+}
+
+#container .operator {
+    background-color: rgb(7, 122, 42) !important;
+    color: black !important;
+    font-weight: bold !important;
+}
+
+#container .gray {
+    background-color: rgb(51, 51, 51) !important;
+    color: white !important;
+}
+
+#container .clear {
+    background-color: rgb(51, 51, 51) !important;
+    color: red !important;
+}
+#container .clearall {
+    background-color: rgb(253, 52, 52) !important;
+}
+#container .igual {
+    grid-row: 5 / span 2;
+    grid-column: 4;
+    font-weight: bold !important;
+    border-radius: 30% !important;
+    background-color: blue !important;
+}
